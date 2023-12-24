@@ -31,7 +31,7 @@ const Login = ({ onLogin }) => {
                                 id="username"
                                 name="username"
                                 required=""
-                                value={email}
+                                value={username}
                                 onChange={(e) => setUsername(e.target.value)}
                             />
                         </div>
