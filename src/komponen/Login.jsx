@@ -8,7 +8,7 @@ const Login = ({ onLogin }) => {
     const handleLogin = (e) => {
         e.preventDefault();
         if (
-        username === 'gpahleh' && 
+        username === 'your username' && 
         password === '12345') {
             onLogin();
             alert('Selamat datang')
