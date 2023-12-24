@@ -2,18 +2,18 @@ import React, { useState } from 'react'
 import '../style/login.css'
 
 const Login = ({ onLogin }) => {
-    const [email, setEmail] = useState('')
+    const [username, setUsername] = useState('')
     const [password, setPassword] = useState('')
 
     const handleLogin = (e) => {
         e.preventDefault();
         if (
-        email === 'kazuma.madao@gmail.com' && 
+        username === 'gpahleh' && 
         password === '12345') {
             onLogin();
             alert('Selamat datang')
         } else {
-            alert('Login gagal silahkan')
+            alert('Login gagal')
         }
     }
     return (
@@ -29,10 +29,10 @@ const Login = ({ onLogin }) => {
                             <input
                                 type="text"
                                 id="username"
-                                name="email"
+                                name="username"
                                 required=""
                                 value={email}
-                                onChange={(e) => setEmail(e.target.value)}
+                                onChange={(e) => setUsername(e.target.value)}
                             />
                         </div>
                         <div className="form-group">
